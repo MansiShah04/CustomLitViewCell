@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ListViewCell"
+             x:Class="ListViewCell.MainPage"
+             xmlns:customControls="clr-namespace:ListViewCell">
+    <StackLayout Margin="0,20,0,0">
+    <ListView x:Name="listTemp" SeparatorVisibility="None" >
+    <ListView.ItemTemplate>
+                <DataTemplate>
+                    <customControls:ExtendedViewCell SelectedBackgroundColor="#4286f4">
+                <ViewCell.View>
+                    <StackLayout HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="FillAndExpand" Orientation="Vertical" 
+                     Padding="4" Spacing="8">
+                        <Label TextColor="Black" Text="Sample"/>
+                    </StackLayout>
+                </ViewCell.View>
+            </customControls:ExtendedViewCell>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+    </ListView>
+    </StackLayout>
+</ContentPage>
